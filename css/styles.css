@@ -82,6 +82,22 @@ body {
 
 /* ====================== */
 
+/*===== Formulario para dejar comentarios =====*/
+#formulario-comentario h2 {
+  font-size: 3rem;
+}
+#formulario-comentario input,
+#formulario-comentario textarea,
+#formulario-comentario button {
+  font-size: 1.5rem;
+}
+#formulario-comentario textarea {
+  resize: none;
+}
+/* =========================================== */
+
+/*===== Breakpoints ===== */
+
 @media (max-width: 426px) {
   #banner-info .title-info {
     font-size: 2.1rem;
@@ -94,4 +110,8 @@ body {
   #banner-info .contenedor-sub {
     text-align: center;
   }
+  #formulario-comentario h2 {
+    font-size: 1.8rem;
+  }
 }
+/* ====================== */
