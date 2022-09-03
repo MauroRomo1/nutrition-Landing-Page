@@ -96,6 +96,19 @@ body {
 }
 /* =========================================== */
 
+/*===== Comentarios (Simulados)===== */
+#comentarios .container .title-info {
+  font-size: 3rem;
+}
+
+#comentarios .card-title {
+  font-size: 2rem;
+}
+#comentarios .card-text {
+  font-size: 1.6rem;
+}
+/* ================================ */
+
 /*===== Breakpoints ===== */
 
 @media (max-width: 426px) {
@@ -112,6 +125,12 @@ body {
   }
   #formulario-comentario h2 {
     font-size: 1.8rem;
+  }
+  #comentarios .container .title-info {
+    font-size: 1.8rem;
+  }
+  #comentarios .card-title {
+    font-size: 1.5rem;
   }
 }
 /* ====================== */
