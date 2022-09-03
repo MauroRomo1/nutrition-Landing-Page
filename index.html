@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon de la pagina -->
+    <link
+      rel="shortcut icon"
+      href="./images/logo-hoja.png"
+      type="image/x-icon"
+    />
+    <!-- css de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- css propio -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Font de letras Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- script de iconos -->
+    <script
+      src="https://kit.fontawesome.com/e23bd1dc39.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nutrition</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo-hoja.png"
+              alt="logo de una hoja verde"
+              id="logo"
+            />
+          </a>
+          <span class="text-white titulo">Nutrition</span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item p-1">
+                <a
+                  class="btn btn-outline-light boton-login"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  >Iniciar sesión</a
+                >
+              </li>
+              <li class="nav-item p-1">
+                <a class="btn btn-success boton-sub" href="#">Suscribirse</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="contenedor-portada">
+          <img
+            src="./images/portada-entrada-blog.jpg"
+            class="img-fluid w-100"
+            alt=""
+          />
+          <!-- Overlay -->
+          <div class="overlay">
+            <div
+              class="container h-100 d-flex align-items-center justify-content-start"
+            >
+              <div class="row">
+                <div class="col-6 offset-end-6 text-start">
+                  <h1 class="title-overlay">Nutrition Blogs</h1>
+                  <p class="d-none d-md-block">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quos voluptate ut quis eligendi consequatur maiores deserunt
+                    hic expedita, dicta labore, assumenda eos pariatur aliquam
+                    neque. Dignissimos dolorum nulla repudiandae eius veniam
+                    vitae in, quos ex blanditiis minima perferendis quaerat
+                    fugit reiciendis inventore doloribus, nesciunt omnis, rerum
+                    recusandae magni. Voluptatibus, modi.
+                  </p>
+                  <a href="#" class="btn btn-success">Conocer más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <!-- Primer modal -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalToggleLabel">
+              Iniciar sesión
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Formulario para el login -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  required
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Nunca compartiremos su correo electrónico con nadie más.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+              </div>
+              <div id="emailHelp" class="form-text">
+                <!-- A dentro del primer modal que abre el segundo -->
+                <a
+                  href="#"
+                  data-bs-target="#recuperarPassModal"
+                  data-bs-toggle="modal"
+                  >¿Olvidaste tu contraseña?
+                </a>
+              </div>
+              <div class="mb-3 mt-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Recuerdame</label
+                >
+              </div>
+              <div class="d-grid text-center">
+                <button type="submit" class="btn btn-success rounded-pill">
+                  Iniciar sesión
+                </button>
+              </div>
+              <p class="text-center mt-3"><strong>O</strong></p>
+              <!-- Iniciar sesion con Google o Facebook -->
+              <div class="d-grid gap-2">
+                <button class="btn btn-danger rounded-pill" type="button">
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                  Continuar con Google
+                </button>
+                <button class="btn btn-primary rounded-pill" type="button">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  Continuar con Facebook
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segundo modal -->
+    <div
+      class="modal fade"
+      id="recuperarPassModal"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalToggleLabel2">
+              Recuperacion de contraseña
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="emailRecuperar" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailRecuperar"
+                  required
+                  aria-describedby="emailHelp"
+                />
+                <div class="alert alert-success my-4" role="alert">
+                  Te enviaremos un correo para recuperar tu contraseña.
+                </div>
+              </div>
+              <div class="justify-content-end d-flex">
+                <button class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              data-bs-target="#modalLogin"
+              data-bs-toggle="modal"
+            >
+              Volver atrás
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

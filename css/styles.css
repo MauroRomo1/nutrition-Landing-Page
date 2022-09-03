@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+/*===== Header ===== */
+
+#logo {
+  width: 60px;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+
+#navbar ul .boton-sub,
+#navbar ul .boton-login {
+  font-size: 1.5rem;
+}
+/* ================= */
+
+/*===== Modales ===== */
+#modalLogin button,
+#recuperarPassModal button {
+  font-size: 1.5rem;
+}
+
+/* ================== */
+
+/*===== Portada de la pagina de inicio ===== */
+.contenedor-portada {
+  position: relative;
+}
+.contenedor-portada .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1;
+}
+.contenedor-portada .title-overlay {
+  font-size: 4rem;
+}
+.contenedor-portada .overlay a {
+  font-size: 1.5rem;
+}
+
+/* ======================================== */
