@@ -57,3 +57,41 @@ body {
 }
 
 /* ======================================== */
+
+/*===== Banner info ===== */
+#banner-info .container-fluid {
+  background-color: black;
+  color: white;
+}
+
+#banner-info img {
+  object-fit: cover;
+}
+
+#banner-info .container-fluid h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+#banner-info .title-info {
+  font-size: 3rem;
+}
+
+#banner-info a {
+  font-size: 1.5rem;
+}
+
+/* ====================== */
+
+@media (max-width: 426px) {
+  #banner-info .title-info {
+    font-size: 2.1rem;
+  }
+
+  #banner-info .container-fluid h2,
+  #banner-info .container-fluid h3 {
+    text-align: center;
+  }
+  #banner-info .contenedor-sub {
+    text-align: center;
+  }
+}
