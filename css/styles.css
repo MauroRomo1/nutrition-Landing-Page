@@ -50,7 +50,7 @@ body {
   z-index: 1;
 }
 .contenedor-portada .title-overlay {
-  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
 }
 .contenedor-portada .overlay a {
   font-size: 1.5rem;
