@@ -109,6 +109,14 @@ body {
 }
 /* ================================ */
 
+/*===== Footer ===== */
+
+footer .footer-title {
+  font-size: 1.5rem;
+}
+
+/* ================ */
+
 /*===== Breakpoints ===== */
 
 @media (max-width: 426px) {
