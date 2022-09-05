@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+/*===== Header ===== */
+
+#logo {
+  width: 60px;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+
+#navbar ul .boton-sub,
+#navbar ul .boton-login {
+  font-size: 1.5rem;
+}
+/* ================= */
+
+/* ===== Carousel ===== */
+
+#carousel .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+}
+.fondo-carousel::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+.carousel-item h5 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+/* =================== */
+
+/*===== Modales ===== */
+#modalLogin button,
+#recuperarPassModal button {
+  font-size: 1.5rem;
+}
+
+/* ================== */
+
+/*===== Footer ===== */
+
+footer .footer-title {
+  font-size: 1.5rem;
+}
+
+/* ================ */
+
+@media (max-width: 426px) {
+  .carousel-item h5 {
+    font-size: 1.6rem;
+  }
+}

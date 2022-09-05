@@ -6,7 +6,7 @@
     <!-- favicon de la pagina -->
     <link
       rel="shortcut icon"
-      href="./images/logo-hoja.png"
+      href="../images/logo-hoja.png"
       type="image/x-icon"
     />
     <!-- css de Bootstrap -->
@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <!-- css propio -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/stylesPaginaPrincipal.css" />
     <!-- Font de letras Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
       src="https://kit.fontawesome.com/e23bd1dc39.js"
       crossorigin="anonymous"
     ></script>
-    <title>Nutrition</title>
+    <title>Nutrition | Pagina principal</title>
   </head>
   <body>
     <header id="navbar">
@@ -38,7 +38,7 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
-              src="./images/logo-hoja.png"
+              src="../images/logo-hoja.png"
               alt="logo de una hoja verde"
               id="logo"
             />
@@ -90,237 +90,67 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <!-- Portada de binvenida -->
+      <!-- ===== Carousel/Slider  ===== -->
       <section>
-        <div class="contenedor-portada">
-          <img
-            src="./images/entrada-blog/portada-entrada-blog.jpg"
-            class="img-fluid w-100"
-            alt="portada del blog"
-          />
-          <!-- Overlay -->
-          <div class="overlay">
-            <div
-              class="container h-100 d-flex align-items-center justify-content-center"
-            >
-              <div class="row">
-                <div
-                  class="col-md-6 offset-start-md-6 text-center text-md-start"
-                >
-                  <h1 class="title-overlay">Nutrition Blogs</h1>
-                  <p class="d-none d-md-block">
-                    En <strong>Nutrition Blogs</strong> queremos fomentar la
-                    buena alimentacion balanceada para poder llevar una vida
-                    fuerte y saludable. En este blog compartiremos muchos
-                    posteos para poder llevar un buen equilibrio alimenticio y
-                    nutritivo, tambien resolver todas las preguntas de nuestros
-                    suscriptores del blog
-                  </p>
-                  <a class="btn btn-success" href="./pages/paginaPrincipal.html"
-                    >Conocer más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Informacion adicional -->
-      <section id="banner-info" class="my-5">
-        <div class="container my-3">
-          <div class="row">
-            <div class="col d-flex justify-content-center">
-              <h2 class="title-info">
-                <i class="fa fa-leaf text-success" aria-hidden="true"></i>
-                Beneficios para suscriptores
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-lg-6 px-0">
+        <div
+          id="carousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active fondo-carousel">
               <img
-                src="./images/entrada-blog/mas-info2.gif"
-                class="img-fluid h-100"
-                alt="chica pensando en su alimentacion"
+                src="../images/carousel/carousel-1.jpg"
+                class="d-block w-100"
+                alt="..."
               />
+              <div class="carousel-caption d-md-block">
+                <h5>UNA BUENA ALIMENTACION MEJORA TU SALUD</h5>
+              </div>
             </div>
-            <div class="col-12 col-lg-6 p-5">
-              <h2>Siempre buscando lo mejor para nuestros lectores.</h2>
-              <h3 class="text-justify mt-3">
-                En <strong>Nutrition Blogs</strong> somos un equipo de
-                profesionales apasionados y comprometidos. Tenemos nuestro
-                Factory, donde trabajamos para brindarles el mejor servicio a
-                nuestros suscriptores y lectores a lo largo del mundo. Brindamos
-                postemos a lo largo de los dias para que nuestros lectores
-                puedan informase y ver cual rutina de alimentacion le conviene
-                mas segun su objetivo alimenticio, al contar con una gran
-                variedad de profesionales en el rubro podemos brnidarles a
-                nuestros suscriptores el Beneficios de mandar sus preguntas mas
-                especificas o solicitar rutinas alimentarias personalizadas
-                según su criterio u objetivo
-              </h3>
-              <div class="contenedor-sub">
-                <a class="btn btn-success" href="#">Suscribirse</a>
+            <div class="carousel-item fondo-carousel">
+              <img
+                src="../images/carousel/carousel-2.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>
+                  COMER SANO AYUDA A TENER MÁS ENERGIA Y ADELGAZAR MÁS RAPIDO
+                </h5>
+              </div>
+            </div>
+            <div class="carousel-item fondo-carousel">
+              <img
+                src="../images/carousel/carousel-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>UNA DIETA VARIADA ES LO MEJOR</h5>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Formulario para dejar un comentario -->
-      <section id="formulario-comentario" class="my-5">
-        <div class="container">
-          <div class="row">
-            <div class="col d-flex justify-content-center">
-              <h2 class="title-info">
-                <i class="fa fa-leaf text-success" aria-hidden="true"></i>
-                Dejanos tu opinión sobre el blog
-              </h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-4">
-              <form>
-                <div class="row">
-                  <div class="form-group col-12 col-md-6 mb-4">
-                    <input
-                      type="text"
-                      class="form-control shadow"
-                      placeholder="Nombre"
-                      required
-                    />
-                  </div>
-                  <div class="form-group col-12 col-md-6">
-                    <input
-                      type="text"
-                      class="form-control shadow"
-                      placeholder="Apellido"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row mt-4">
-                  <div class="form-group col">
-                    <textarea
-                      class="form-control shadow"
-                      rows="5"
-                      placeholder="Deja aquí tu comentario..."
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="row mt-4">
-                  <div class="col d-grid">
-                    <button class="btn btn-success shadow" type="submit">
-                      Enviar
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Simulando comentarios de la gente  -->
-      <section id="comentarios">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2 class="title-info">
-                <i class="fa fa-leaf text-success" aria-hidden="true"></i>
-                Comentarios de nuestros lectores
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <!-- Comentarios 1 -->
-          <div class="row mt-5">
-            <div class="col">
-              <div class="card2 mb-3" style="max-width: 100">
-                <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">MARIA ALVAREZ</h5>
-                      <p class="card-text">
-                        Tienen algun numero en el que me pueda comunicar? 😁
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Hace 6 meses</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Comentarios 2 -->
-          <div class="row mt-5">
-            <div class="col">
-              <div class="card2 mb-3" style="max-width: 100">
-                <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">RICARDO PEREZ</h5>
-                      <p class="card-text">
-                        El contendio es muy bueno, puedo llevar una buena
-                        alimentacion gracias a vostros
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Hace 2 años</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Comentarios 3 -->
-          <div class="row mt-5">
-            <div class="col">
-              <div class="card2 mb-3" style="max-width: 100">
-                <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">FRANCO SOTO</h5>
-                      <p class="card-text">
-                        Muy buen contendio chicos, gracias!
-                      </p>
-                      <p class="card-text">
-                        <small class="text-muted">Hace 1 años</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Comentarios 4 -->
-          <div class="row mt-5">
-            <div class="col">
-              <div class="card2 mb-3" style="max-width: 100">
-                <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">MATIAS MAMANI</h5>
-                      <p class="card-text">No me gusto el contendio -10</p>
-                      <p class="card-text">
-                        <small class="text-muted">Hace 5 años</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
     </main>
@@ -600,7 +430,6 @@
       </div>
     </div>
 
-    <!-- Script de Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
