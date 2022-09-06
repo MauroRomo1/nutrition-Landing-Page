@@ -56,6 +56,16 @@ body {
 }
 /* =================== */
 
+/*===== Posteos, busquedas y anuncios ===== */
+#posteosBusqueda h5,
+#posteosBusqueda button,
+#posteosBusqueda a,
+#posteosBusqueda input {
+  font-size: 1.5rem;
+}
+
+/* ======================================== */
+
 /*===== Modales ===== */
 #modalLogin button,
 #recuperarPassModal button {
