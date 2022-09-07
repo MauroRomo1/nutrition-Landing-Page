@@ -86,4 +86,8 @@ footer .footer-title {
   .carousel-item h5 {
     font-size: 1.6rem;
   }
+
+  .card-posteo {
+    width: 100% !important;
+  }
 }
