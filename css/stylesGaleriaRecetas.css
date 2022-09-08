@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+/*===== Header ===== */
+
+#logo {
+  width: 60px;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+
+#navbar ul .boton-sub,
+#navbar ul .boton-login {
+  font-size: 1.5rem;
+}
+/* ================= */
+
+/*===== Galeria de recetas ===== */
+#recetas button {
+  font-size: 1.5rem;
+}
+
+/* ============================ */
+
+/*===== Modales ===== */
+#modalLogin button,
+#modalLogin input,
+#recuperarPassModal button,
+#recuperarPassModal input {
+  font-size: 1.5rem;
+}
+
+/* ================== */
+
+/*===== Footer ===== */
+
+footer .footer-title {
+  font-size: 1.5rem;
+}
+
+/* ================ */

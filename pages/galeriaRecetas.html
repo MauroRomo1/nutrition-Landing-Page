@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon de la pagina -->
+    <link
+      rel="shortcut icon"
+      href="../images/logo-hoja.png"
+      type="image/x-icon"
+    />
+    <!-- css de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- css propio -->
+    <link rel="stylesheet" href="../css/stylesGaleriaRecetas.css" />
+    <!-- Font de letras Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- script de iconos -->
+    <script
+      src="https://kit.fontawesome.com/e23bd1dc39.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nutrition | Galeria recetas</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../images/logo-hoja.png"
+              alt="logo de una hoja verde"
+              id="logo"
+            />
+            <span class="text-white titulo">Nutrition</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  aria-current="page"
+                  href="./pages/paginaPrincipal.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item p-1">
+                <a
+                  class="btn btn-outline-light boton-login"
+                  href="#modalLogin"
+                  data-bs-toggle="modal"
+                  >Iniciar sesión</a
+                >
+              </li>
+              <li class="nav-item p-1">
+                <a class="btn btn-success boton-sub" href="#">Suscribirse</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="recetas" class="my-5">
+        <div class="container text-center">
+          <h1 class="mb-4">
+            <i class="fa fa-leaf text-success" aria-hidden="true"></i>
+            Recetas fascinantes
+          </h1>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Receta 1 -->
+            <div class="col">
+              <div class="card h-100 mb-5">
+                <img
+                  src="../images/recetas-img/receta-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Eaque, esse quasi. Quam?
+                  </p>
+                </div>
+                <div class="d-grid col-6 mx-auto mb-4">
+                  <button class="btn btn-success" type="button">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Receta 2 -->
+            <div class="col">
+              <div class="card h-100 mb-5">
+                <img
+                  src="../images/recetas-img/receta-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+                <div class="d-grid col-6 mx-auto mb-4">
+                  <button class="btn btn-success" type="button">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Receta 3 -->
+            <div class="col">
+              <div class="card h-100 mb-5">
+                <img
+                  src="../images/recetas-img/receta-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content.
+                  </p>
+                </div>
+                <div class="d-grid col-6 mx-auto mb-4">
+                  <button class="btn btn-success" type="button">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Receta 4 -->
+            <div class="col">
+              <div class="card h-100 mb-5">
+                <img
+                  src="../images/recetas-img/receta-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+                <div class="d-grid col-6 mx-auto mb-4">
+                  <button class="btn btn-success" type="button">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Receta 5 -->
+            <div class="col">
+              <div class="card h-100 mb-5">
+                <img
+                  src="../images/recetas-img/receta-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+                <div class="d-grid col-6 mx-auto mb-4">
+                  <button class="btn btn-success" type="button">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Receta 6 -->
+            <div class="col">
+              <div class="card h-100 mb-5">
+                <img
+                  src="../images/recetas-img/receta-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+                <div class="d-grid col-6 mx-auto mb-4">
+                  <button class="btn btn-success" type="button">
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <!-- SOBRE NOSOTROS -->
+          <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold text-success footer-title"
+            >
+              Sobre nosotros
+            </h5>
+            <p>
+              Nutrition blogs es una organización que fomenta la buena
+              alimentacion de los usuarios atravez de varias rectas nutritivas
+            </p>
+          </div>
+
+          <!-- OTROS -->
+
+          <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold text-success footer-title"
+            >
+              Otros
+            </h5>
+            <p>
+              <a
+                href="/page/galeria.html"
+                class="text-success text-decoration-none"
+                >Recetas</a
+              >
+            </p>
+            <p>
+              <a
+                href="/page/error404.html"
+                class="text-white text-decoration-none"
+              >
+                Privacidad</a
+              >
+            </p>
+            <p>
+              <a
+                href="/page/error404.html"
+                class="text-white text-decoration-none"
+                >Terminos y condiciones</a
+              >
+            </p>
+          </div>
+
+          <!-- CONTACTO -->
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold text-success footer-title"
+            >
+              Contacto
+            </h5>
+            <p><i class="fa fa-home" aria-hidden="true"></i> Av. Amercia 800</p>
+            <p>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              nutritionBlogs@outlook.com
+            </p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +54 3815123456</p>
+          </div>
+        </div>
+
+        <!-- SEGUNDA LÍNEA  -->
+
+        <hr class="mb-4" />
+
+        <!-- COPYRIGHT -->
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              <strong class="text-success">Nutrition Blogs</strong>
+              2022 &copy;Todos los derechos reservados.
+            </p>
+          </div>
+
+          <!-- REDES SOCIALES -->
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/"
+                    class="text-info"
+                    target="_black"
+                    ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_black"
+                    class="text-primary"
+                    ><i
+                      class="fa fa-facebook-official fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="text-danger"
+                    target="_black"
+                    ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#" class="text-success" target="_black"
+                    ><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Primer modal -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalToggleLabel">
+              Iniciar sesión
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Formulario para el login -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  required
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  Nunca compartiremos su correo electrónico con nadie más.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  required
+                />
+              </div>
+              <div id="emailHelp" class="form-text">
+                <!-- A dentro del primer modal que abre el segundo -->
+                <a
+                  href="#"
+                  data-bs-target="#recuperarPassModal"
+                  data-bs-toggle="modal"
+                  >¿Olvidaste tu contraseña?
+                </a>
+              </div>
+              <div class="mb-3 mt-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Recuerdame</label
+                >
+              </div>
+              <div class="d-grid text-center">
+                <button type="submit" class="btn btn-success rounded-pill">
+                  Iniciar sesión
+                </button>
+              </div>
+              <p class="text-center mt-3"><strong>O</strong></p>
+              <!-- Iniciar sesion con Google o Facebook -->
+              <div class="d-grid gap-2">
+                <button class="btn btn-danger rounded-pill" type="button">
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                  Continuar con Google
+                </button>
+                <button class="btn btn-primary rounded-pill" type="button">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  Continuar con Facebook
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segundo modal -->
+    <div
+      class="modal fade"
+      id="recuperarPassModal"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalToggleLabel2">
+              Recuperacion de contraseña
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="emailRecuperar" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailRecuperar"
+                  required
+                  aria-describedby="emailHelp"
+                />
+                <div class="alert alert-success my-4" role="alert">
+                  Te enviaremos un correo para recuperar tu contraseña.
+                </div>
+              </div>
+              <div class="justify-content-end d-flex">
+                <button class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              data-bs-target="#modalLogin"
+              data-bs-toggle="modal"
+            >
+              Volver atrás
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
