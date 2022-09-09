@@ -28,8 +28,27 @@ body {
 /* ================= */
 
 /*===== Galeria de recetas ===== */
-#recetas button {
+#recetas .posteo {
+  transition: transform 1s;
+}
+
+#recetas .posteo:hover {
+  transform: scale(1.1);
+  z-index: 99999;
+}
+
+#recetas .img-recetas {
+  height: 250px;
+
+  object-fit: cover;
+}
+
+#recetas button,
+#recetas h5 {
   font-size: 1.5rem;
+}
+#recetas h5 {
+  font-family: "Roboto", sans-serif;
 }
 
 /* ============================ */
