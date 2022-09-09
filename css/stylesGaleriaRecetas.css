@@ -70,3 +70,16 @@ footer .footer-title {
 }
 
 /* ================ */
+
+/*===== breakpoints ===== */
+
+@media (max-width: 992px) {
+  #recetas .posteo {
+    transition: none;
+  }
+  #recetas .posteo:hover {
+    transform: none;
+  }
+}
+
+/* ====================== */
