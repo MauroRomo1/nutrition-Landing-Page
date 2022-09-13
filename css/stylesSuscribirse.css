@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+/*===== Header ===== */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+#logo {
+  width: 60px;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+#navbar ul .boton-sub,
+#navbar ul .boton-login {
+  font-size: 1.5rem;
+}
+/* ================= */
+
+/*===== Formululario de suscripcion =====*/
+#suscribirse input,
+#suscribirse button {
+  font-size: 1.5rem;
+}
+
+/* ===================================== */
+
+/*===== Modales ===== */
+#modalLogin button,
+#modalLogin input,
+#recuperarPassModal button,
+#recuperarPassModal input {
+  font-size: 1.5rem;
+}
+
+/* ================== */
+
+/*===== Footer ===== */
+
+footer .footer-title {
+  font-size: 1.5rem;
+}
+
+/* ================ */
