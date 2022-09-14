@@ -5,14 +5,10 @@
 }
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 body {
   font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
 }
 /*===== Header ===== */
 #navbar {
@@ -35,6 +31,16 @@ body {
   font-size: 1.5rem;
 }
 /* ================= */
+
+/*===== Carousel de sub ===== */
+#carouselSub .carousel-inner img {
+  height: auto;
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(40%);
+}
+
+/* ========================= */
 
 /*===== Formululario de suscripcion =====*/
 #suscribirse input,
