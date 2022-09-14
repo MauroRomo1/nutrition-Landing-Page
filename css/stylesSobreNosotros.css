@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+/*===== Header ===== */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+#logo {
+  width: 60px;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+#navbar ul .boton-sub,
+#navbar ul .boton-login {
+  font-size: 1.5rem;
+}
+/* ================= */
+
+main {
+  background-image: url("../images/fondoSobreNosotros.jpg");
+  height: 100vh;
+}
+
+/*===== Perfil ===== */
+.card-perfil {
+  width: auto;
+}
+.perfil {
+  object-fit: cover;
+  width: 500px;
+}
+.twitch {
+  color: #6441a5;
+}
+/* =============== */
+
+/*===== Modales ===== */
+#modalLogin button,
+#modalLogin input,
+#recuperarPassModal button,
+#recuperarPassModal input {
+  font-size: 1.5rem;
+}
+
+/* ================== */
+
+/*===== Footer ===== */
+
+footer .footer-title {
+  font-size: 1.5rem;
+}
+
+/* ================ */
