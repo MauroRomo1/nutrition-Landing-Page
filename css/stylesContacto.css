@@ -11,6 +11,11 @@ body {
   font-size: 1.5rem;
 }
 /*===== Header ===== */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
 
 #logo {
   width: 60px;
